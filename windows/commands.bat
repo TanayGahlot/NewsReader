@@ -1,0 +1,2 @@
+chcp 65001
+python3 newsUpdate.py 9f055cb1404449f79aca035f832b32f9
