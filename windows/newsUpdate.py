@@ -14,11 +14,10 @@ import pyttsx3 as ptts
 
 
 API_URL = "https://newsapi.org/v1/articles?source=%s&sortBy=top&apiKey=%s"
-SOURCES_OF_INTEREST = ["the-times-of-india"]
-#                       , "the-hindu", "bbc-news", "cnn",
-#                       "google-news", "the-economist", "financial-times",
-#                       "business-insider", "national-geographic", "hacker-news",
-#                       "ars-technica", "techcrunch", "the-verge"]
+SOURCES_OF_INTEREST = ["the-times-of-india", "the-hindu", "bbc-news", "cnn",
+                       "google-news", "the-economist", "financial-times",
+                       "business-insider", "national-geographic", "hacker-news",
+                       "ars-technica", "techcrunch", "the-verge"]
 
 def say(text):
     """it converts text to speech."""
@@ -57,8 +56,6 @@ def getHeadlines(news):
     for source_of_interest in SOURCES_OF_INTEREST:
         articles = news[source_of_interest]
         headlinesOfSource = [article["title"] for article in articles]
-        if len(headlinesOfSource)>3:
-            headlinesOfSource = headlinesOfSource[:3]
         headlines[source_of_interest] = headlinesOfSource
     return headlines
 

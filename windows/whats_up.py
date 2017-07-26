@@ -4,9 +4,6 @@ Created on Tue Jul 25 19:30:12 2017
 
 @author: Sarvaswa
 """
-
-## Key: 9f055cb1404449f79aca035f832b32f9
-
 ## Script to run updateNews.py
 
 ## Import required packages
@@ -44,4 +41,3 @@ if __name__ == '__main__':
                   stderr=PIPE, shell=True)
         stdout, stderr = p.communicate()
         print(stdout)
-        print(stderr)
