@@ -3,7 +3,10 @@
 
 ![Alt text](/Images/screenshot.png?raw=true "Screenshot")
 
-Usage:
+# Requirements
+Progressbar
+
+# Usage:
 ```python newsUpdate.py <API_key>```
 
 You can get API_key from https://newsapi.org/register
